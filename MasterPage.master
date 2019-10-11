@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Dagbog</title>
+    <link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>
+    <div class="wrap">
+        <asp:Table ID="tblContent" runat="server" Width="1024px">
+            <asp:TableRow>
+                <asp:TableCell BackColor="LawnGreen" Height="100">
+                    Top banner
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow>
+                <asp:TableCell Height="0.5" CssClass="colorLines">
+
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow>
+                <asp:TableCell>
+                    <asp:Menu ID="Menu1" runat="server" CssClass="menu" DataSourceID="smdsMenu" Orientation="Horizontal">
+                        <StaticItemTemplate>
+                            <div class="menuItem">
+                                <%# Eval("Text") %>
+                            </div>
+                        </StaticItemTemplate>
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="smdsMenu" runat="server" ShowStartingNode="False" />
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow>
+                <asp:TableCell Height="15">
+
+                </asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow>
+                <asp:TableCell>
+                    <asp:ContentPlaceHolder id="cphContent" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+        
+    </div>
+    </form>
+</body>
+</html>

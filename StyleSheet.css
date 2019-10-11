@@ -1,0 +1,65 @@
+﻿body {
+    font:normal 12px/1.8em Arial, Helvetica, sans-serif;
+}
+
+a, a:visited, a:hover
+{
+    color:#8fc00a;
+    text-decoration:none;
+}
+
+h2, h1 {
+	font:normal 24px Arial, Helvetica, sans-serif;
+	padding:8px 0 12px;
+	margin:8px 0;
+	color:#323a3f;
+}
+
+.wrap
+{
+    width:900px;
+    margin: 0 auto;
+}
+
+.menuItem
+{
+    border-left:1px solid #DDDDDD;
+    vertical-align:central;
+    padding:20px;
+}
+
+.menu a, a:visited
+{
+    color:darkgray;
+}
+
+.menu a:hover
+{
+    color:#8fc00a;
+}
+
+.frontpagePosts
+{
+    margin:10px;
+    color: #333333;
+    border: 1px solid #DDDDDD;
+}
+
+a.userlink
+{
+    color:#8fc00a;
+}
+a.frontPostTitle
+{
+    color:#5f5f5f;
+}
+
+a.frontPostText
+{
+    color:#8fc00a;
+}
+
+.colorLines
+{
+    background-color:#DDDDDD;
+}
